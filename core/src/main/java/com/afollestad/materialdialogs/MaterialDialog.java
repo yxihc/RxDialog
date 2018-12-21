@@ -1245,6 +1245,7 @@ public class MaterialDialog extends DialogBase
           this.mediumFont = Typeface.DEFAULT_BOLD;
         }
       }
+
       if (this.regularFont == null) {
         try {
           this.regularFont = Typeface.create("sans-serif", Typeface.NORMAL);
