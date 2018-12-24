@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/shape_white"
     android:orientation="vertical">
 
     <TextView
@@ -60,6 +61,7 @@
         android:textSize="@dimen/customTitle" />
 
     <EditText
+        android:text="啊实打实大撒大声地"
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
