@@ -65,8 +65,8 @@ public class MessageDialog extends AppCompatDialog implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_dialog_message_cancel:
-                if (mBuilder.onNeutralCallback != null) {
-                    mBuilder.onNeutralCallback.onClick(this);
+                if (mBuilder.onNegativeCallback != null) {
+                    mBuilder.onNegativeCallback.onClick(this);
                 }
                 break;
             case R.id.tv_dialog_message_confirm:
@@ -101,7 +101,7 @@ public class MessageDialog extends AppCompatDialog implements View.OnClickListen
         private CharSequence mMessage;
         private int mAnimations;
         private MessageButtonCallback onPositiveCallback;
-        private MessageButtonCallback onNeutralCallback;
+        private MessageButtonCallback onNegativeCallback;
 
 
         public Builder(@NonNull Context context) {
@@ -219,8 +219,8 @@ public class MessageDialog extends AppCompatDialog implements View.OnClickListen
         }
 
 
-        public Builder onNeutral(@NonNull MessageButtonCallback callback) {
-            this.onNeutralCallback = callback;
+        public Builder onNegative(@NonNull MessageButtonCallback callback) {
+            this.onNegativeCallback = callback;
             return this;
         }
 
@@ -260,13 +260,5 @@ public class MessageDialog extends AppCompatDialog implements View.OnClickListen
         void onClick(@NonNull Dialog dialog);
     }
 
-    static int resolveDialogTheme(@NonNull Context context, @StyleRes int resid) {
-        if ((resid >>> 24 & 255) >= 1) {
-            return resid;
-        } else {
-            TypedValue outValue = new TypedValue();
-            context.getTheme().resolveAttribute(android.support.v7.appcompat.R.attr.alertDialogTheme, outValue, true);
-            return outValue.resourceId;
-        }
-    }
+
 }

@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.view1:
                 MessageDialog.Builder(this)
                         .title("sdasds")
-//                        .setCancelable(true)
                         .message("sdsads")
                         .negativeText("qdsad")
                         .positiveText("kasjdksad")
@@ -48,6 +47,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             @Override
                             public void onClick(@NonNull Dialog dialog) {
                                 dialog.dismiss();
+                            }
+                        })
+                        .onNegative(new MessageDialog.MessageButtonCallback() {
+                            @Override
+                            public void onClick(@NonNull Dialog dialog) {
+
                             }
                         })
                         .show();
