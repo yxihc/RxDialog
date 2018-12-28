@@ -235,7 +235,6 @@ public class MessageDialog extends AppCompatDialog implements View.OnClickListen
             if (this.mOnKeyListener != null) {
                 dialog.setOnKeyListener(this.mOnKeyListener);
             }
-
             // 设置参数
             WindowManager.LayoutParams params = dialog.getWindow().getAttributes();
             params.windowAnimations = this.mAnimations;

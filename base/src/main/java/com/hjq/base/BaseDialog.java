@@ -16,7 +16,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 /**
  *    author : Android 轮子哥
  *    github : https://github.com/getActivity/AndroidProject
