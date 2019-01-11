@@ -14,9 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:visibility="invisible"
+        android:alpha="0"
         app:cardCornerRadius="6dp"
         app:cardElevation="3dp"
+
         app:cardUseCompatPadding="true">
 
         <ProgressBar
