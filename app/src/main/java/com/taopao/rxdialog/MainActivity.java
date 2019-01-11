@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.view1).setOnClickListener(this);
     }
 
+
+    public void click2(View view) {
+        LoginDialog loginDialog = new LoginDialog(this, R.style.BaseDialogStyle);
+        loginDialog.show();
+    }
+
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
