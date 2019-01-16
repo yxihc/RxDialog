@@ -9,6 +9,7 @@ import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 
@@ -24,6 +25,7 @@ public class LoginDialog extends Dialog {
     private Button mBt_go;
     private float mScaleX;
     private float mScaleY;
+    private Window mWindow;
 
     LoginDialog(Context context) {
         super(context, R.style.BaseDialogStyle);
@@ -54,6 +56,7 @@ public class LoginDialog extends Dialog {
                         .start();
 //                mCv.animate().alpha(0)
 
+
 //                        .setDuration(800)
 //                        .start();
                 mCv_loading.animate().alpha(1)
@@ -64,6 +67,14 @@ public class LoginDialog extends Dialog {
         });
 
         //缩放动画啊
+
+
+        initWindow();
+    }
+
+    private void initWindow() {
+        mWindow = getWindow();
+
     }
 
 
