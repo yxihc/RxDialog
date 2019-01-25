@@ -17,6 +17,7 @@ import com.hjq.base.BaseDialogFragment;
  */
 public class MessageDialog {
 
+    
     public static class Builder
             extends BaseDialogFragment.Builder<Builder>
             implements View.OnClickListener {
