@@ -1,1 +1,1 @@
-include ':app', ':core', ':commons', ':mdsample', ':base', ':dialog', ':dialogsimple', ':MaterialLogin-master'
+include ':core', ':commons', ':base', ':dialog', ':dialogsimple', ':MaterialLogin-master', ':shapeloading', ':rxareaselect', ':rxdatepicker', ':FolderFilePicker', ':folderfilepicker', ':rxdialog', ':RxDialogSimple',':app'
